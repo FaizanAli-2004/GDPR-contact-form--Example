@@ -1,0 +1,60 @@
+/* Basic reset and nice font */
+body {
+    margin: 0;
+    padding: 2rem;
+    font-family: system-ui, sans-serif;
+    background: #f9f9fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Main white box in the centre */
+.container {
+    max-width: 640px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+/* Titles and text */
+h1 { color: #111; margin-bottom: 0.5em; }
+.notice { background: #e7f3ff; padding: 1rem; border-radius: 8px; margin: 1.5rem 0; font-size: 0.95em; }
+
+/* Form labels and inputs */
+label { display: block; margin-top: 1rem; font-weight: 600; }
+.required::after { content: " *"; color: #c33; }
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+/* Checkboxes */
+.checkbox { margin: 1.5rem 0; }
+
+/* Send button */
+button {
+    background: #0066cc;
+    color: white;
+    border: none;
+    padding: 0.9rem 1.5rem;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+button:hover { background: #0052a3; }
+
+/* Footer at the bottom */
+footer {
+    margin-top: 3rem;
+    font-size: 0.9em;
+    color: #666;
+    text-align: center;
+}

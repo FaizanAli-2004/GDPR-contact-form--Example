@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Contact Us – Privacy First</title>
+    <meta name="description" content="A simple contact form that follows UK GDPR and Data Protection laws."/>
+
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+
+        <!-- Privacy notice, tells the user exactly what happens to their data (required by law) -->
+        <div class="notice">
+            <strong>Privacy Notice</strong><br>
+            We only collect what we need to reply to you.<br>
+            • Your data is kept max 6 months then deleted.<br>
+            • No cookies, no tracking, no selling your data.<br>
+            • Your data is never sold or shared with third parties for marketing.<br>
+            • You can ask us to delete or see your data anytime → faizanAli@ICE.com
+        </div>
+
+        <!--Contact form -->
+        <form id="contactForm" action="https://formsubmit.co/your-email-here@example.com" method="POST">
+            
+            <!-- Honeypot field, stops spam bots without that famous CAPTCHA -->
+            <input type="text" name="_honey" style="display:none">
+
+            <label for="name" class="required">Name</label>
+            <input type="text" name="name" id="name" placeholder="Faizan Ali" required />
+
+            <label for="email" class="required">Email</label>
+            <input type="email" name="email" id="email" placeholder="faizanAli@gmail.com" required />
+
+            <label for="message" class="required">Message</label>
+            <textarea name="message" id="message" rows="6" placeholder="Your message..." required></textarea>
+
+            <!-- Required consent checkbox -->
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="consent" required>
+                    I agree to you using my data to reply to this message <span style="color:#c33;">*</span>
+                </label>
+            </div>
+
+            <!-- Optional newsletter, separate consent (not forced) -->
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="newsletter" value="yes">
+                    I would like to receive your newsletter (optional – you can unsubscribe anytime)
+                </label>
+            </div>
+
+            <!--  FormSubmit.co -->
+            <input type="hidden" name="_subject" value="New contact form message">
+            <input type="hidden" name="_next" value="https://your-website.com/thanks.html">
+            <input type="hidden" name="_captcha" value="false">
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <footer>
+            <a href="/privacy-policy.html">Full Privacy Policy</a> | 
+            <a href="mailto:privacy@example.com">faizanAli@ICE.com</a><br>
+            © 2025 – Built to follow UK Data Protection laws
+        </footer>
+    </div>
+
+</body>
+</html>
